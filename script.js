@@ -358,7 +358,77 @@ items.forEach((item, index) => {
   });
 });
 
-//Project Section
+//certificate
+
+tl2.from(".header-certificate", {
+  y:-90,
+  opacity:0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".header-certificate",
+    scroller: "body",
+    start: "top 120%",
+    end: "top 40%",
+    markers: false,
+    scrub: true,
+  },
+});
+
+
+tl2.from(".certificate .img1", {
+  x: -100,
+  opacity: 0,
+  rotation: -15,
+  scale: 0.9,
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".certificate .img1",
+    scroller: "body",
+    start: "top 80%",
+    end: "top 0%",
+    markers: false,
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  },
+});
+
+tl2.from(".certificate .img2", {
+  x: 100,
+  opacity: 0,
+  rotation: 15,
+  scale: 0.9,
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".certificate .img2",
+    scroller: "body",
+    start: "top 90%",
+    end: "top 0%",
+    markers: false,
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  },
+});
+
+tl2.from(".certificate .img3", {
+  x: 100,
+  opacity: 0,
+  rotation: 10,
+  scale: 0.9,
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".certificate .img3",
+    scroller: "body",
+    start: "top 80%",
+    end: "top 50%",
+    markers: false,
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  },
+});
+
 
 tl2.from(".project-section .project-card img , .project-link", {
   scale: 0.1,
@@ -372,7 +442,6 @@ tl2.from(".project-section .project-card img , .project-link", {
     scrub: true,
   },
 });
-
 //footer details about/contact form
 
 tl2.from(".main .bio", {
@@ -402,6 +471,7 @@ tl2.from(".main .contact", {
   },
 });
 
+
 // contact form data clear when refresh
 
 document.getElementById("form").addEventListener("submit", function (event) {
@@ -415,3 +485,6 @@ function clearForm() {
   document.getElementById("email-input").value = "";
   document.getElementById("message-input").value = "";
 }
+
+
+
